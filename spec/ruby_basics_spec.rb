@@ -10,8 +10,8 @@ describe "ruby" do
       num2 = 7
 
       expect(division(num1,num2)).to eq(6)
+      end
     end
-  end
 
   describe '#assign_variable' do
     it 'takes an argument of a persons name and assign it to a variable name' do
@@ -40,7 +40,7 @@ describe "ruby" do
     it 'raises an error with one argument' do
       greeting = "Hi there, "
 
-      expect{ greeting(greeting)}.to raise_error
+      expect{ greeting(greeting, name)}.to raise_error
     end
   end
 
